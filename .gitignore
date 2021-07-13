@@ -1,6 +1,6 @@
 .idea/
 .vscode/
-data/
+./data/
 node_modules/
 dist/
 tmp/
@@ -13,3 +13,5 @@ docs/.vuepress/dist/
 yarn-error.log
 .history
 .package-lock.json
+.secrets
+.env

@@ -1,7 +1,3 @@
-**Attention Existing MacOS, Windows, and AppImage users:**
-
-- Automatic update functionality was broken before version 1.7.5. Please update manually from the releases section on the right. From 1.7.5 the app will automatically update (like it was supposed to).
-
 # Beekeeper Studio
 
 Beekeeper Studio is a cross-platform SQL editor and database manager available for Linux, Mac, and Windows.
@@ -42,11 +38,19 @@ Beekeeper Studio supports connecting to the following databases:
 
 Download the latest release from the [releases page](https://github.com/beekeeper-studio/beekeeper-studio/releases), or from [our website](https://beekeeperstudio.io)
 
+## Documentation
+
+Check out [docs.beekeeperstudio.io](https://docs.beekeeperstudio.io) for user guides, FAQs, troubleshooting tips, and more.
+
 ## Contributing to Beekeeper Studio
 
 We love *any* community engagement. Even if you're complaining because you don't like something about the app!
 
 Because building an inclusive and welcoming community is important to us, please follow our code of conduct as you engage with the project.
+
+### Contribute without coding
+
+We have you covered, read our [guide to contributing in 10 minutes without coding](https://github.com/beekeeper-studio/beekeeper-studio/issues/287).
 
 ### Starting the Dev version of Beekeeper Studio
 
@@ -67,6 +71,10 @@ yarn run electron:serve ## the app will now start
 ```
 
 ### Where to make changes?
+
+This repo is now a monorepo, we have several places with code, but only really a couple of important entry points.
+
+All app code lives in `apps/studio`, some shared code lives in `shared/src`. This is shared with other apps.
 
 Beekeeper Studio has two entry points:
 - `background.js` - this is the electron-side code that controls native things like showing windows.
@@ -109,6 +117,4 @@ Post Release:
 
 ## Big Thanks
 
-Beekeeper Studio wouldn't exist without [Sqlectron-core](https://github.com/sqlectron/sqlectron-core), the core database libraries from the (now unmaintained) Sqlectron project. Beekeeper Studio started as an experimental fork of that repository. A big thanks to @maxcnunes and the rest of the Sqlectron community.
-
-
+Beekeeper Studio wouldn't exist without [Sqlectron-core](https://github.com/sqlectron/sqlectron-core), the core database libraries from the [Sqlectron project](https://github.com/sqlectron/sqlectron-gui). Beekeeper Studio started as an experimental fork of that repository. A big thanks to @maxcnunes and the rest of the Sqlectron community.
